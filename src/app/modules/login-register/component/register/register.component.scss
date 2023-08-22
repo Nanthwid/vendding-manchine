@@ -1,0 +1,57 @@
+
+  
+  @import "primeng/resources/themes/lara-light-blue/theme.css";
+  @import "primeng/resources/primeng.css";
+  @import 'primeflex/primeflex.scss';
+  
+  .container{
+    margin:auto;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  
+  .card {
+   box-shadow: 0 3px 5px 0 rgba(0,0,0,0.4);
+   border-radius: 7px;
+   gap:3px;
+   padding: 26px 16px;
+  }
+  
+  .card-body{
+    padding: 2px 16px;
+  }
+  
+  .container-center{
+   position: absolute;
+   top: 45%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   padding: 2px 16px;
+   gap:3px;
+  }
+  
+  
+  .mybutton {
+      @include styleclass('bg-blue-500 text-white hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3 border-none');
+  }
+  
+  p {
+    font-family: Lato;
+  }
+  
+  :host ::ng-deep .p-button{
+   width: 100%;
+  }
+  
+  .p-card{
+    margin: 100px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .collaps {
+
+      flex-direction:row
+  }

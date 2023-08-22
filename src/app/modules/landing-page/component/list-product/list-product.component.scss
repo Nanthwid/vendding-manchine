@@ -1,5 +1,73 @@
-.post {
-    container-type: inline-size;
-    container-name: sidebar;
-  }
+
   
+  @import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import 'primeflex/primeflex.scss';
+
+.container{
+  margin:auto;
+  width: 100%;
+  // border: 3px solid green;
+  padding: 10px;
+}
+
+.setCenter1{
+  align-items: center;
+}
+
+.setCenter2{
+  align-content: center;
+}
+
+.card {
+ box-shadow: 0 3px 5px 0 rgba(0,0,0,0.4);
+ border-radius: 7px;
+ gap:3px;
+ padding: 26px 16px;
+}
+
+.card-body{
+  padding: 2px 16px;
+}
+
+.container-center{
+ position: absolute;
+ top: 45%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ padding: 2px 16px;
+ gap:3px;
+}
+
+#main {
+  width: 220px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+#main div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.mybutton {
+    @include styleclass('bg-blue-500 text-white hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3 border-none');
+}
+
+p {
+  font-family: Lato;
+}
+
+:host ::ng-deep .p-button{
+ width: 100%;
+}
+
+.p-card{
+  margin: 100px;
+}
+
+.set-size{
+  margin: 100px;
+}

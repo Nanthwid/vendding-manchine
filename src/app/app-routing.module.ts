@@ -3,8 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'test',
+    path: 'landingPage',
     loadChildren: () => import('./modules/landing-page/landing-page.module').then(m => m.LandingPageModule)
+  },
+  {
+    path: 'synchronize',
+    loadChildren: () => import('./modules/login-register/login-register.module').then(m => m.LoginRegisterModule)
   }
 ];
 
@@ -13,3 +17,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
